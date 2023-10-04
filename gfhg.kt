@@ -8,7 +8,7 @@ class User(val name: String) {
     constructor(name: String, age: Int, height: Int) : this(name, age){
         println("보조 생성자: 이름은 $name, 나이는 $age, 키는 $height 입니다.")
     }
-    constructor() : this("Unknown") {
+    constructor() : this(name= "unknown") {
         println("보조 생성자: 이름 정보가 없습니다.")
     }
 }
@@ -48,5 +48,7 @@ fun main() {
     }
     
     val sum = operateOnNumber(5, 3) { x, y -> x + y }
+    val multi = operateOnNumber(5, 3) { x, y -> x * y }
     println("합: $sum")  // 출력: "합: 8"
+    println("곱: $multi")  // 출력: "합: 8"
 }
