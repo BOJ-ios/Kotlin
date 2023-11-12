@@ -23,3 +23,9 @@ fun main() {
     println("곱: $mul")
     println("나: $div")
 }
+
+
+val sum = {x : Int, y : Int -> x + y}  //람다식 정의
+val sub = {x : Int, y : Int -> x - y}
+val mul = {x : Int, y : Int -> x * y}
+val div = {x : Int, y : Int -> x / y}
